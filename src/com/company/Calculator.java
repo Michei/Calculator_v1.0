@@ -266,18 +266,13 @@ public class Calculator extends JFrame {
                     }
                 }
                 if (!but && !flag){   // Если не введено второе число
-                    bi = new BigDecimal(input.getText());d = 1;
-                    but = true;ter = true;flag = false;
+                    bi = new BigDecimal(input.getText());
+                    d = 1;but = true;ter = true;flag = false;
                     if (bi.compareTo(BigDecimal.ZERO) == 0) {
-                        d = 1;
-                        ter = true;
-                        flag = true;
+                        d = 1;ter = true;flag = true;
                     } else {
                         bi = new BigDecimal(input.getText());
-                        d = 1;
-                        but = true;
-                        ter = true;
-                        flag = true;
+                        d = 1;but = true;ter = true;flag = true;
                     }
                 }
             }
@@ -289,7 +284,8 @@ public class Calculator extends JFrame {
                     d = 2;bi = bc;
                     ter = true;flag=true;
                 }
-                if (!but && !flag){bi = new BigDecimal(input.getText());d=2;but=true;ter = true;flag=true;}
+                if (!but && !flag){bi = new BigDecimal(input.getText());
+                d=2;but=true;ter = true;flag=true;}
             }
             if (e.getSource()==b3){   //Кнопка "Вычитание"
                 if(but && flag) {ter=true;d=3;}
@@ -300,7 +296,7 @@ public class Calculator extends JFrame {
                     ter = true;flag=true;
                 }
                 if (!but && !flag){bi = new BigDecimal(input.getText());
-                    d=3;but=true;ter=true;flag=true;}
+                d=3;but=true;ter=true;flag=true;}
             }
 
             if (e.getSource()==b4){   // Кнопка "Сложение"
@@ -311,7 +307,8 @@ public class Calculator extends JFrame {
                     d = 4;bi = bc;
                     ter = true;flag=true;
                 }
-                if (!but && !flag){bi = new BigDecimal(input.getText());d=4;but=true;ter = true;flag=true;}
+                if (!but && !flag){bi = new BigDecimal(input.getText());
+                d=4;but=true;ter = true;flag=true;}
             }
 
             if (e.getSource()==b5){
